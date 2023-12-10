@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran - Toko KitaKita</title>
+    <link rel="stylesheet" href="style5.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo">
+        <h1>Proses Pembayaran</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="coba1.html">Beranda</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="keranjang.html">Keranjang</a></li>
+            <li><a href="pembayaran.html">Pembayaran</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Proses Pembayaran</h2>
+            <p>Silakan lengkapi informasi pembayaran Anda:</p>
+            
+            <form action="proses_pembayaran.php" method="post">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="nomor_kartu">Nomor Kartu Kredit:</label>
+                <input type="text" id="nomor_kartu" name="nomor_kartu" required>
+
+                <label for="tanggal_kadaluarsa">Tanggal Kadaluarsa:</label>
+                <input type="text" id="tanggal_kadaluarsa" name="tanggal_kadaluarsa" placeholder="MM/YYYY" required>
+
+                <label for="kode_cvv">Kode CVV:</label>
+                <input type="text" id="kode_cvv" name="kode_cvv" required>
+
+                <button type="submit">Proses Pembayaran</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hak Cipta &copy; 2022 Toko KitaKita</p>
+    </footer>
+</body>
+
+</html>

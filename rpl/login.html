@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script>
+		function validateLogin() {
+			var username = document.forms["loginForm"]["admin"].value;
+			var password = document.forms["loginForm"]["password"].value;
+
+			if (username === "" || password === "") {
+				alert("Harap isi kedua kolom username dan password.");
+				return false; // Hentikan pengiriman formulir
+			}	
+			// Contoh: Validasi sederhana
+			if (username === "admin" && password === "password") {
+				// Jika login benar, arahkan ke halaman home
+				window.location.href = "index.html";
+			} else {
+				// Jika login salah, tampilkan peringatan
+				alert("Username atau password salah. Silakan coba lagi.");
+			}
+
+			// Kembalikan false untuk mencegah formulir dikirimkan secara normal
+			return false;
+		}
+	</script>
+</head>
+<body>
+<div class="container">
+	<div class="login">
+		<div class="header">
+			<h1>Login</h1>
+		</div>
+		<div class="main">
+			<form name="loginForm" onsubmit="return validateLogin()">
+				<input type="text" placeholder="username" name="admin">
+				<br>
+				<input type="password" placeholder="password" name="password">
+				<br>
+				<a href="">Forgot My Password</a>
+				<br>
+				<button type="submit">Login</button>
+			</form>
+		</div>
+	</div>
+	<div class="img">
+		<span>
+			<h1>Welcome to the Tokyo</h1>
+		</span>
+	</div>
+</div>
+</body>
+</html>

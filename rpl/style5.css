@@ -1,0 +1,111 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('bg6.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Ubah warna teks agar terlihat lebih baik */
+}
+
+header {
+    background-color: #333; /* Ubah warna latar header */
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    color: #fff; /* Ubah warna teks header */
+}
+
+header img {
+    width: 50px; /* Ubah sesuai kebutuhan */
+    height: 50px; /* Ubah sesuai kebutuhan */
+    margin-right: 10px;
+    position: absolute; /* Tambahkan properti position: absolute; */
+    top: 10px; /* Sesuaikan dengan jarak atas yang diinginkan */
+    left: 10px; /* Sesuaikan dengan jarak kiri yang diinginkan */
+}    
+
+nav ul li a:hover {
+    color: #ff4500; /* Warna saat menu dihover, misalnya oranye */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang konten */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+/* Form pembayaran bisa ditambahkan di sini */
+
+footer {
+    background-color: #333; /* Ubah warna latar footer */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Gaya untuk link */
+a {
+    color: #007bff; /* Warna default link */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3; /* Warna saat link dihover */
+}
+
+/* Tambahkan efek transisi pada link */
+a {
+    transition: color 0.3s ease;
+}
+
+/* style.css */
+
+/* (Bagian CSS lainnya tetap sama seperti sebelumnya) */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
